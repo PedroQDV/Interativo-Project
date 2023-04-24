@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo"> <img src="./Assets/zyro-image.png"></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Curso</a>
+            <a href="#portfolio">Materias</a>
+            <a href="#labs">Laboratórios</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Bem-Vindo!</h3>
+            <h3>O maior e o mais completo curso <br><span class="multiple-text"></span></h3>
+            <p>PARA VOCÊ SE TORNAR UM(A) PROFISSIONAL QUALIFICADO(A) E MAIS RENOMADO(A)<br> PARA O MERCADO DE TRABALHO!</p>
+
+            <div class="login-content">
+                <form action="index.html">
+            
+                       <div class="input-div one">
+                          <div class="i">
+                          </div>
+                          <div class="div">
+                                  <h5>Nome</h5>
+                                  <input required type="text" name="name" class="input">
+                          </div>
+                       </div>
+    
+    
+                    <div class="input-div one">
+                        <div class="i">
+                        </div>
+                        <div class="div">
+                                <h5>E-mail</h5>
+                                <input required type="email" name="email"  class="input" id="inputemail">
+                        </div>
+                    </div>
+    
+    
+                       <div class="input-div pass">
+                          <div class="i"> 
+                          </div>
+                          <div class="div">
+                               <h5>Telefone</h5>
+                               <input required type="number"  name="phone" class="input">
+                       </div>
+                    </div>
+    
+                    <button type="submit" class="btn" onclick="customValidation()"> Pré Inscrição </button>
+                </form>
+            </div>
+
+            <div class="social-media">
+                <a href="https://github.com/PedroQDV"><i class='bx bxl-github' ></i></i></a>
+                <a href="https://www.instagram.com/pedr0392/"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://www.linkedin.com/in/pedro-fedozzi/"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- <div class="home-img">
+            <img src="./Assets/Página Matriz 02.png" alt="">
+        </div> -->
+
+        <div class="thanks" id="thanks">
+            <img src="./Assets/404-tick.png">
+            <h2>Obrigado!</h2>
+            <p>Seus Detalhes foram enviados com sucesso!</p>
+            <button type="button" class="btnE" onclick="closeThanks()">Voltar</button>
+        </div>
+    </section>
+
+    <!-- about section design -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./Assets/Serve para quem 03.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">O CURSO <span>TÉCNICO DE ENFERMAGEM</span> SERVE PARA QUEM?</h2>
+            <p>O curso técnico de enfermagem é indicado para aqueles que desejam
+             seguir carreira na área da saúde, buscam uma formação rápida e acessível,
+             além de boas oportunidades de trabalho e estabilidade profissional. É também
+             uma opção interessante para quem deseja ampliar seus conhecimentos em outras 
+             áreas da saúde ou complementar sua formação em enfermagem, como estudantes da área.
+             Se você se encaixa em algum desses perfis, o curso técnico de enfermagem pode ser ideal para você! 
+            </p>
+            
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">PORQUE VOCÊ DEVE CURSAR O CURSO <br><span>TÉCNICO DE ENFERMAGEM </span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <img class="benefit-img" src="./assets/Doutores.svg">
+                <h3>Saúde</h3>
+                <p>A área da saúde é uma das que mais crescem no mundo,
+                    e o curso técnico de enfermagem é uma porta de entrada
+                    para esse mercado em constante expansão.
+                    </p>
+            </div>
+
+            <div class="services-box">
+                <img class="benefit-img2" src="./assets/Profissão.svg">
+                <h3>Estabilidade</h3>
+                <p>Ter estabilidade profissional é fundamental para garantir
+                     tranquilidade e segurança financeira a longo prazo,
+                     valorizando a previsibilidade em suas carreiras..
+                    </p>
+            </div>
+
+            <div class="services-box">
+                <img class="benefit-img" src="./assets/Graficos.svg">
+                <h3>Profissionais Brasileiros</h3>
+                <p>O Brasil tem uma demanda crescente por profissionais da saúde
+                    Além disso a formação em enfermagem no Brasil é reconhecida em
+                    nível internacional
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materias section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Matérias</h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box" id="port-box">
+                <img src="./Assets/Imagens Matérias Novas/Anatomia.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Anatomia</h4>
+                    <p>O estudo da estrutura do corpo humano e dos organismos animais em geral.</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" id="port-box4">
+                <img src="./Assets/Imagens Matérias Novas/Fundamentos Enfe 02.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Fundamentos da Enfermagem</h4>
+                    <p>Os conceitos e habilidades essenciais para a prática da enfermagem, incluindo cuidados básicos, comunicação terapêutica, ética e legislação.</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            
+            <div class="portfolio-box" id="port-box3">
+                <img src="./Assets/Imagens Matérias Novas/Farmacologia 02.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Farmacologia</h4>
+                    <p>O estudo dos efeitos de drogas e substâncias químicas no corpo humano e dos organismos animais em geral.</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" id="port-box2">
+                <img src="./Assets/Imagens Matérias Novas/Fisiologia 01.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Fisiologia</h4>
+                    <p>O estudo das funções e processos biológicos do corpo humano e dos organismos animais em geral.</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" id="port-box5">
+                <img src="./Assets/Imagens Matérias Novas/Microbiologia 03.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Microbiologia</h4>
+                    <p>O estudo dos microrganismos, como bactérias, vírus, fungos e protozoários, e seu papel na saúde e na doença.</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" id="port-box6">
+                <img src="./Assets/Imagens Matérias Novas/Parasitologia 01.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Parasitologia</h4>
+                    <p>O estudo dos parasitas e seu relacionamento com seus hospedeiros, incluindo sua biologia, patogenia, epidemiologia e controle.</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Labs section design -->
+
+    <section class="labs" id="labs">
+
+        <div class="about-content">
+            <h2 class="heading"><span>Laboratórios</span> e <span>Comunidade</span></h2>
+            <p>As aulas serão realizadas em <span>laboratórios ações sociais e palestras</span>, proporcionando aos estudantes um ambiente de aprendizado dinâmico e prático.<br>
+
+                Além disso, os <span>estágios</span> serão realizados em hospitais, em diversos setores, como <span>UTI</span>, <span>pronto-socorro</span>, <span>clínica cirúrgica e médica</span>, entre outros. Essa imersão no ambiente hospitalar é fundamental para o desenvolvimento dos futuros profissionais da área da saúde.
+                
+            </p>
+        </div>
+        
+
+        <div class="labs-container">
+
+            <div class="labs-box">
+                <img src="./Assets/PHOTO-2023-04-04-12-40-34.jpg" alt="">
+            </div>
+
+            <div class="labs-box">
+                <img src="./Assets/PHOTO-2023-04-04-12-40-41.jpg" alt="">
+            </div>
+
+            <div class="labs-box">
+                <img src="./Assets/PHOTO-2023-04-04-12-40-42.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <h3>Nome</h3>
+            <p>A evolução do seu aprendizado e conhecimento</p>
+            <p><span>Entre em contato: </span>Pedro@gmail.com</p>
+            <p><span>Ou pelo telefone: </span>(55)1111-1111</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+
+    <!-- custom js -->
+    <script src="./script.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.js"></script>
+      <script type="text/javascript">
+          VanillaTilt.init(document.querySelector("#port-box"), {
+              max: 25,
+              speed: 400
+        });
+
+        VanillaTilt.init(document.querySelector("#port-box2"), {
+              max: 25,
+              speed: 400
+        });
+
+        VanillaTilt.init(document.querySelector("#port-box3"), {
+              max: 25,
+              speed: 400
+        });
+
+        VanillaTilt.init(document.querySelector("#port-box4"), {
+              max: 25,
+              speed: 400
+        });
+
+        VanillaTilt.init(document.querySelector("#port-box5"), {
+              max: 25,
+              speed: 400
+        });
+
+        VanillaTilt.init(document.querySelector("#port-box6"), {
+              max: 25,
+              speed: 400
+        });
+    </script>
+</body>
+</html>
