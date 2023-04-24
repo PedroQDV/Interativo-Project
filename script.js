@@ -94,53 +94,6 @@ inputs.forEach(input => {
 	input.addEventListener("blur", remcl);
 });
 
-/*=============== Validação Forms ===============*/
-
-const fields = document.querySelectorAll("[required]")
-
-
-
-function customValidation(event) {
-
-    const field = event.target
-
-    // logica para verificar se existem erros
-    function verifyErrors() {
-        let foundError = false;
-
-        for(let error in field.validity) {
-            // se não for customError
-            // então verificar se tem erro
-            if (error != "customError" && field.validity[error]){
-                foundError = error
-            }
-        }
-
-        return foundError;
-    }
-
-const error = verifyErrors()
-
-if (error) {
-        // trocar mensagem de required
-        field.setCustomValidity("Esse campo é obrigatório");
-
-    }
-
- else {
-        field.setCustomValidity("");
-        openThanks();
-    }
-    
-}
-
-for ( const field of fields) {
-
-    field.addEventListener("invalid", customValidation)
-
-
-}
-
 /*=============== Thanks ===============*/
 
 let thanks = document.getElementById("thanks");
