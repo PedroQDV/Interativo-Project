@@ -638,8 +638,8 @@ form{
 
 @media (max-width: 768px) {
 
-    .home-content {
-        margin-right: 1rem;
+    form{
+        width: 35rem;
     }
 
 
