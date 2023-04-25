@@ -394,8 +394,14 @@ form{
 
 
 .portfolio h2 {
-    margin-bottom: 4rem;
     color: var(--bg-color);
+}
+
+.heading2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    margin-bottom: 4rem;
 }
 
 .portfolio-container {
