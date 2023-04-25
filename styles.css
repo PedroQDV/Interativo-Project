@@ -638,6 +638,10 @@ form{
 
 @media (max-width: 768px) {
 
+    .home-content {
+        margin-right: 1rem;
+    }
+
 
     /* .home {
         flex-direction: column;
