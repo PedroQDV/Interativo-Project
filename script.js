@@ -31,7 +31,7 @@ const handleSubmit = (event) => {
     const email = document.querySelector('input[name=email]').value;
     const phone = document.querySelector('input[name=phone]').value;
 
-    fetch('https://api.sheetmonkey.io/form/5TWSKHymrkCZuiwtC3cjQj', {
+    fetch('https://api.sheetmonkey.io/form/5TWSKHymrkCZuiwtC3cjQj','https://api.sheetmonkey.io/form/sgsZgJH9HcoXyQXatjBRbH', {
 
     method: 'post',
     headers: {
